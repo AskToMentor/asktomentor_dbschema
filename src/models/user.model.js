@@ -92,32 +92,46 @@ const userSchema = new mongoose.Schema(
         loginCount: {
             type: Number
         },
-        // monthNumber: {
-        //     required: true,
-        //     type: Number
-        // }, 
+        
         password: {
             required: true,
             type: String
         },
+
         phoneNumber: {
             type: String
         },
+
         pincode: {
             type: Number
         },
+
         profileImageUrl: {
             type: String
         },
+
         profileViedoUrl: {
             type: String
         },
+
         role: {
             default: RolesEnum.USER,
             type: Number
         },
+
+        salt: {
+            type: String
+        },
+        
         stateCode: {
             required: false,
+            type: String
+        },
+        // monthNumber: {
+        //     required: true,
+        //     type: Number
+        // }, 
+        user_name: {
             type: String
         },
         userId: {
