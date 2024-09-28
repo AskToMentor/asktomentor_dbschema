@@ -20,6 +20,9 @@ const categoriesSchema = new mongoose.Schema(
         deleteTime: {
             type: Number
         },
+        imageUrl: {
+            type: String
+        },
         parentId: {
             type: String
         },
